@@ -1,4 +1,4 @@
-# Exercicios Aula 04
+<!-- # Exercicios Aula 04
 
 ## Exercício:  `push()`
 
@@ -116,9 +116,9 @@ const alunos = [
 3. Utilize o método "filter" mais uma vez para criar um novo array com os alunos cujo nome começa com a letra "J".
 4. Verifique se você conseguiu utilizar o método "filter" corretamente.
 
-Boa sorte!
+Boa sorte! -->
 
-## Exercício: `find()`
+<!-- ## Exercício: `find()`
 
 1. Temos a lista de lugares:
 
@@ -136,11 +136,11 @@ const lugares = [
 1. Utilize o método "find" para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 10 pessoas.
 2. Utilize o método "find" novamente para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 25 pessoas.
 3. Utilize o método "find" mais uma vez para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 40 pessoas.
-4. Verifique se você conseguiu utilizar o método "find" corretamente.
+4. Verifique se você conseguiu utilizar o método "find" corretamente. -->
 
-Boa sorte!
+<!-- Boa sorte! -->
 
-## Exercício: `forEach()`
+<!-- ## Exercício: `forEach()`
 
 1. Temos uma lista de sabores de pizza e seus valores:
 
@@ -158,9 +158,9 @@ const pizzas = [
 1. Utilize o método "forEach" para percorrer a lista de pizzas e imprimir no console o nome do sabor da pizza e seu valor.
 2. Verifique se você conseguiu utilizar o método "forEach" corretamente.
 
-Boa sorte!
+Boa sorte! -->
 
-## Exercício: `map()`
+<!-- ## Exercício: `map()`
 
 1. Temos uma lista de pessoas com seus respectivos nomes, alturas e pesos:
 
@@ -178,7 +178,7 @@ const pessoas = [
 1. Utilize o método "map" para criar um novo array de objetos que contenha somente o nome e o IMC (índice de massa corporal) de cada pessoa, sendo que o IMC é calculado pela fórmula `peso / altura²`.
 2. Verifique se você conseguiu utilizar o método "map" corretamente.
 
-Boa sorte!
+Boa sorte! -->
 
 ## Exercício: `reduce()`
 
