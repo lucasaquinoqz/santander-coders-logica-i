@@ -15,3 +15,40 @@
 
     Os passos acima são um guia, mas não obrigatórios. Podem desenvolver uma lógica diferente, que atenda ao solicitado.
 */
+
+const enviarEmail = require('./envia-email')
+
+const clientes = [
+    {email:'lucas@gmail.com', receberComunicado: true, nome:'Lucas'},
+    {email:'carlos@gmail.com', receberComunicado: false, nome:'Carlos'},
+    {email:'maria@gmail.com', receberComunicado: true, nome:'Maria'},
+    {email:'julia@gmail.com', receberComunicado: true, nome:'Julia'},
+    {email:'paulo@gmail.com', receberComunicado: false, nome:'Paulo'},
+    {email:'joão@gmail.com', receberComunicado: true, nome:'João'},
+    {email:'marcos@gmail.com', receberComunicado: false, nome:'Marcos'}
+]
+
+const vaiculosNovos = ["HB20", "Onix", "Prisma", "Ford Ka"]
+const vaiculosMaisVendidos = ["HB20", "Onix"]
+
+function diaDaSemana() {
+    now = new Date
+    // return now.getDay()
+    return 1
+}
+
+function corpoDoEmail(arr) {
+    let body = `Prezado cliente ${arr.nome}, esse mês temos diversos novos viculos para você sair de carro novo! São eles ${vaiculosNovos.join(', ')}. Para que você possa tomar como base na sua escolhar, informamos que os carros mais vendidos no ultimo vez foram ${vaiculosMaisVendidos.join(', ')}.
+
+          Só nessa semana, na compra do seu carro você sai de tanque cheio! Não perca essa oportunidade, venha para a CarStore e saia de carro novo!`
+    return body
+}
+
+if(diaDaSemana() === 1) {
+    for (let cliente of clientes) {
+        cliente.receberComunicado === true ? enviarEmail(cliente.email,"SUPER OFERTA CARSTORE!",corpoDoEmail(cliente)) : null
+    }
+}
+
+
+
